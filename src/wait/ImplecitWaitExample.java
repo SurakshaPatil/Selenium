@@ -1,4 +1,4 @@
-package New;
+package wait;
 
 import java.time.Duration;
 
