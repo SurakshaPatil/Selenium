@@ -1,4 +1,4 @@
-package New;
+package Dropdown;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Dropdown1 {
+public class Dropdown2 {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
@@ -15,14 +15,13 @@ public class Dropdown1 {
 		Thread.sleep(500);
 		driver.manage().window().maximize();
 		Thread.sleep(500);
-		WebElement element=driver.findElement(By.id("carselect"));
-		Select select=new Select(element);
+		WebElement dropdownbox=driver.findElement(By.id("multiple-select-example"));
+		Select select=new Select(dropdownbox);
+		select.selectByValue("apple");
 		select.selectByIndex(1);
+		select.selectByVisibleText("Peach");
 		Thread.sleep(500);
-		select.selectByValue("bmw");
-		Thread.sleep(500);
-		select.selectByVisibleText("Honda");
-		Thread.sleep(500);
+		select.deselectByIndex(1);
 		driver.close();
 	}
 

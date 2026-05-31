@@ -1,4 +1,4 @@
-package New;
+package locators;
 
 import java.util.List;
 

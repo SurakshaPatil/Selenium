@@ -14,7 +14,7 @@ public class ScrollUpDown {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        driver.get("https://sellglobal.ebay.in/seller-center/");
+        driver.get("https://sellglobal.ebay.in");
 
         Thread.sleep(2000);
 
