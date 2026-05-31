@@ -12,25 +12,17 @@ public class ScrollUpDownJsExecuter {
 		WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        driver.get("https://sellglobal.ebay.in/seller-center/");
+        driver.get("https://motionflow.dev/demos?utm_source=chatgpt.com");
 
         Thread.sleep(2000);
-
-        // Reject cookies (if present)
-        try {
-            driver.findElement(By.id("onetrust-reject-all-handler")).click();
-        } catch (Exception e) {
-            System.out.println("Cookie popup not displayed");
-        }
         
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-
         // Scroll down by 500 pixels
         js.executeScript("window.scrollBy(0,500)");
         Thread.sleep(2000);
 
         //Scroll until specific element is visible
-        WebElement element = driver.findElement(By.xpath("//h2[text()='Make your listings stand out!']"));
+        WebElement element = driver.findElement(By.xpath("//h3[text()='Slide Animations']"));
         
         js.executeScript("arguments[0].scrollIntoView(true);", element);
         Thread.sleep(4000);

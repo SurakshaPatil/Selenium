@@ -9,7 +9,8 @@ public class Gecko {
 	public static void main(String[] args) throws InterruptedException {
 
 		WebDriver driver=new FirefoxDriver();
-		driver.get("https://www.facebook.com/");
+		String url = "https://www.facebook.com/";
+		driver.get(url);
 		String title=driver.getTitle();
 		System.out.println(title);
 		String currentUrl=driver.getCurrentUrl();

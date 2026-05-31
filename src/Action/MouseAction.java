@@ -10,7 +10,6 @@ import org.openqa.selenium.Keys;
 public class MouseAction {
 
 	public static void main(String[] args) throws InterruptedException {
-
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 

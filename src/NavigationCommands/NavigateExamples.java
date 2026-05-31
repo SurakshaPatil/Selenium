@@ -1,4 +1,4 @@
-package New;
+package NavigationCommands;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

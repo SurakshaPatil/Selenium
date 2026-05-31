@@ -13,9 +13,8 @@ public class FirstClass {
 		System.out.println(title);
 		String currentUrl=driver.getCurrentUrl();
 		System.out.println(currentUrl);
-		System.out.println("Page Source is: "+driver.getPageSource());
-		
-		Thread.sleep(500);
+		//System.out.println("Page Source is: "+driver.getPageSource());
+		Thread.sleep(2000);
 		driver.quit();
 
 	}
